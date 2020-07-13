@@ -14,9 +14,16 @@ var fixedSurname = inputSurname.charAt(0).toUpperCase() + inputSurname.slice(1).
 surnameList.push(fixedSurname);
 // console.log(surnameList); 
 
-// ordino surnameList
+// mettere gli elementi dell'array in ordine alfabetico
+surnameList.sort();
+console.log(surnameList);
 
 
+// ordino in lista surnameList
+
+for (var i = 0; i < surnameList.length; i++) {
+    document.getElementById('cognomi').innerHTML += '<li>' + surnameList[i] + '</li>';
+}
 
 
-// stampa lista in ordine alfabetico
+// Indicare la posizione dell'input nell'array
