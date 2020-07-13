@@ -37,7 +37,7 @@ while (i < surnameList.length && trovato == false){
 console.log(i);
 
 if (trovato == true) {
-    console.log('cognome trovato');
+    console.log('cognome trovato alla posizione ' + i);
 } else {
     console.log('cognome non trovato');
 }
@@ -54,7 +54,7 @@ if (trovato == true) {
 // var position = -1;
 // while (i < surnameList.length && position == -1){
 //     if (fixedSurname == surnameList[i]){
-//     position = ++i;
+//         position = ++i;
 //     }
 //     i++;
 // } 
