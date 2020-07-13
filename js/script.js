@@ -16,14 +16,53 @@ surnameList.push(fixedSurname);
 
 // mettere gli elementi dell'array in ordine alfabetico
 surnameList.sort();
-console.log(surnameList);
+// console.log(surnameList);
 
-
-// ordino in lista surnameList
-
+// ordino in lista surnameList e stampo a schermo
 for (var i = 0; i < surnameList.length; i++) {
     document.getElementById('cognomi').innerHTML += '<li>' + surnameList[i] + '</li>';
 }
 
-
 // Indicare la posizione dell'input nell'array
+
+var i = 0;
+var trovato = false;
+
+while (i < surnameList.length && trovato == false){
+    if (fixedSurname == surnameList[i]){
+    trovato = true;
+    }
+    i++;
+} 
+console.log(i);
+
+if (trovato == true) {
+    console.log('cognome trovato');
+} else {
+    console.log('cognome non trovato');
+}
+
+//******Variante con Indexof */
+
+// var position = surnameList.indexOf(fixedSurname) +1;
+// console.log(position);
+
+
+//******variante con la var position */
+
+// var i = 0;
+// var position = -1;
+// while (i < surnameList.length && position == -1){
+//     if (fixedSurname == surnameList[i]){
+//     position = ++i;
+//     }
+//     i++;
+// } 
+
+// if (position != -1) {
+//     console.log('il cognome si trova al ' + position + ' posto');
+// } else {
+//     console.log('il cognome non è stato trovato');
+    
+// }
+
